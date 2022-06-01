@@ -8,7 +8,7 @@ body {
     background-size: cover;
     background-image: url("./images/pexels-josh-sorenson-995301.jpg");
     transition: 2s;
-    animation: bodyAnimation 30s;
+    animation: bodyAnimation 100s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
