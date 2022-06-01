@@ -1,0 +1,99 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 98vh;
+    background-size: cover;
+    background-image: url("./images/pexels-josh-sorenson-995301.jpg");
+    transition: 2s;
+    animation: bodyAnimation 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+ header {
+     background-color: black;
+     color: white;
+     width: 100vw;
+ }
+
+ header > * {
+     text-align: center;
+ }
+footer {
+    background-color: black;
+    width: 100vw;
+    color: white;   
+}
+footer >  * {
+    text-align: center;
+}
+@keyframes bodyAnimation {
+    0% {
+        background-image: url("./images/pexels-josh-sorenson-995301.jpg");
+    }
+    16.7% {
+        background-image: url("./images/pexels-pixabay-257904.jpg");
+    }
+    50% {
+        background-image: url("./images/pexels-ricardo-rojas-3608804.jpg");
+    }
+    66.7% {
+        background-image: url("./images/pexels-stephen-niemeier-63703.jpg");
+    }
+    83.5% {
+        background-image: url("./images/pexels-vishnu-r-nair-1105666.jpg");
+    }
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0;
+}
+.allPlayButtons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.letter {
+    /* background-color: black; */
+    font-size: 2rem;
+    /* width: inherit;
+    height: inherit; */
+    color: red;
+}
+.miniContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.miniContainer h5 {
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align :center;
+}
+.playButton {
+    background-color:rgba(92, 194, 207, 0.2);
+    width: 10vmax;
+    height: 10vmax;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.clicked {
+    animation: playButton 0.1s;
+}
+
+@keyframes playButton {
+    0% {
+        border: 1px solid red;
+    }
+    100% {
+        border: 4px solid rgb(207, 111, 32);
+    }
+}

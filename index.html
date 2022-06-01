@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <script>
+        const boomi = new Audio("./sounds/01 - JavaScript Drum Kit_sounds_boom.wav")
+        function playing() {
+            boomi.play()
+        }
+    </script>
+    <header>
+        <h1>Rythm City</h1>
+    </header>
+    <!-- <button id="boom" onClick="playing()">Boom</button> -->
+    <div class="allPlayButtons">
+        <div class="miniContainer">
+            <button id="a" class="playButton">
+                <h3 class="letter">A</h3>
+            </button>
+            <h5>Boom</h5>
+        </div>
+        <div class="miniContainer">
+            <button id="s" class="playButton">
+                <h3 class="letter">S</h3>
+            </button>
+            <h5>Clap</h5>
+        </div>
+        <div class="miniContainer">
+            <button id="d" class="playButton">
+                <h3 class="letter">D</h3>
+            </button>
+            <h5>Hi-Hat</h5>
+        </div>
+        <div class="miniContainer">
+            <button id="f" class="playButton">
+                <h3 class="letter">F</h3>
+            </button>
+            <h5>Open Hat</h5>
+        </div>
+        <div class="miniContainer">
+            <button id="g" class="playButton">
+                <h3 class="letter">G</h3>
+            </button>
+            <h5>Ride</h5>
+        </div>
+        <div class="miniContainer">
+            <button id="h" class="playButton">
+                <h3 class="letter">H</h3>
+            </button>
+            <h5>Snare</h5>
+        </div>
+        <div class="miniContainer">
+            <button id="j" class="playButton">
+                <h3 class="letter">J</h3>
+            </button>
+            <h5>Tink</h5>
+        </div>
+        <div class="miniContainer">
+            <button id="k" class="playButton">
+                <h3 class="letter">K</h3>
+            </button>
+            <h5>Tom</h5>
+        </div>      
+    </div>
+    <footer>
+        <h4>Drum Kit 1.0</h4>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
